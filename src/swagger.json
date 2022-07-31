@@ -13,7 +13,6 @@
       "post": {
         "tags": ["Users"],
         "summary": "Create a new user",
-        "description": "Create a new user",
         "requestBody": {
           "required": true,
           "content": {
@@ -210,6 +209,22 @@
             }
           }
         }
+      }
+    },
+    "/users/{user_id}": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "Show user profile by id",
+        "parameters": [{
+          "name": "user_id",
+          "in": "path",
+          "description": "Query any user",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "format": "uuidV4"
+          }
+        }]
       }
     }
   }
