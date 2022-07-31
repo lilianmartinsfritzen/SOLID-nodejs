@@ -100,6 +100,21 @@
             }
           }
         }
+      },
+      "get": {
+        "tags": ["Users"],
+        "summary": "List all users",
+        "description": "Only `admin` user can access",
+        "parameters": [{
+          "name": "user_id",
+          "in": "header",
+          "description": "Admin user_id",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "format": "uuidV4"
+          }
+        }]
       }
     }
   }
