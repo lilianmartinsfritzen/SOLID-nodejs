@@ -290,6 +290,22 @@
           }
         }
       }
+    },
+    "/users/{user_id}/admin": {
+      "patch": {
+        "tags": ["Users"],
+        "summary": "Turn an admin user",
+        "parameters": [{
+          "name": "user_id",
+          "in": "path",
+          "description": "Allows to make a profile in admin",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "format": "uuidV4"
+          }
+        }]
+      }
     }
   }
 }
