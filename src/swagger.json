@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "SOLID Challenge",
+    "description": "This is a SOLID Challenge API",
+    "version": "1.0.0",
+    "contact": {
+      "email": "lilianmartinsfritzen@gmail.com"
+    }
+  }
+}
